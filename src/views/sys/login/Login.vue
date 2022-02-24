@@ -1,5 +1,6 @@
 <template>
   <div :class="prefixCls" class="relative w-full h-full px-4">
+    1
     <AppLocalePicker
       class="absolute text-white top-4 right-4 enter-x xl:text-gray-600"
       :showText="false"
