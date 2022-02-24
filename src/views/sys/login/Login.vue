@@ -32,24 +32,9 @@
         <div class="flex w-full h-full py-5 xl:h-auto xl:py-0 xl:my-0 xl:w-6/12">
           <div
             :class="`${prefixCls}-form`"
-            class="
-              relative
-              w-full
-              px-5
-              py-8
-              mx-auto
-              my-auto
-              rounded-md
-              shadow-md
-              xl:ml-16 xl:bg-transparent
-              sm:px-8
-              xl:p-4 xl:shadow-none
-              sm:w-3/4
-              lg:w-2/4
-              xl:w-auto
-              enter-x
-            "
+            class="relative w-full px-5 py-8 mx-auto my-auto rounded-md shadow-md xl:ml-16 xl:bg-transparent sm:px-8 xl:p-4 xl:shadow-none sm:w-3/4 lg:w-2/4 xl:w-auto enter-x"
           >
+            <Test :loading="false" />
             <LoginForm />
             <ForgetPasswordForm />
             <RegisterForm />
@@ -70,6 +55,7 @@
   import RegisterForm from './RegisterForm.vue';
   import MobileForm from './MobileForm.vue';
   import QrCodeForm from './QrCodeForm.vue';
+  import Test from './Test.vue';
   import { useGlobSetting } from '/@/hooks/setting';
   import { useI18n } from '/@/hooks/web/useI18n';
   import { useDesign } from '/@/hooks/web/useDesign';
